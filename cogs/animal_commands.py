@@ -5,7 +5,7 @@ from cogs import utils
 
 class AnimalCommands(utils.Cog):
 
-    @commands.command(cls=utils.Command, aliases=['kitty'])
+    @commands.command(cls=utils.Command, aliases=['kitty','kitten','meow'])
     @utils.cooldown.cooldown(1, 5, commands.BucketType.channel)
     async def cat(self, ctx:utils.Context, *, breed:str=None):
         """Gives you some kitty pictures"""
